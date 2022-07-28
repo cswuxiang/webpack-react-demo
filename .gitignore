@@ -1,0 +1,8 @@
+node_modules
+lib
+coverage*
+docs/.vuepress/dist
+.DS_Store
+types
+TCE-JSSDK.pdf
+.idea
