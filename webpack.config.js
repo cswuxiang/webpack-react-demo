@@ -1,4 +1,5 @@
 const path = require("path");
+const DemoPlugin = require("./plugins/DemoPlugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -47,5 +48,10 @@ module.exports = {
     publicPath: "/build/",
     open: true,
     overlay: true
-  }
+  },
+   plugins: [
+    new DemoPlugin.DemoPlugin({
+      name: 'Jay'
+    })
+  ]
 };
